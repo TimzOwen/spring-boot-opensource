@@ -1,6 +1,7 @@
 package com.timzowen.user.Authentication.model;
 
 import javax.persistence.*;
+import java.lang.reflect.Type;
 import java.util.Collection;
 
 @Entity
@@ -16,7 +17,14 @@ public class User {
     @Column(name = "email")
     private String email;
     private String password;
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "users_roles",
+            joinColumns = @JoinColumn(
+                    name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(
+                    name = "role_id", referencedColumnName = "id")
+    )
     private Collection<Role> roles;
 
     private User(String firstName, String lastName, String email, String password, Collection<Role> roles){
