@@ -3,6 +3,7 @@ package com.timzowen.user.Authentication.web.controller;
 import com.timzowen.user.Authentication.service.UserService;
 import com.timzowen.user.Authentication.web.dto.UserRegistrationDto;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/registration")
 public class UserRegistrationController {
 
-    private UserService userService;
+    private final UserService userService;
 
     public UserRegistrationController(UserService userService) {
         super();
         this.userService = userService;
     }
 
-    @ModelAttribute
+    @ModelAttribute("user")
     public UserRegistrationDto userRegistrationDto(){
         return new UserRegistrationDto();
     }
@@ -27,7 +28,7 @@ public class UserRegistrationController {
     // return page on success registration
     @GetMapping
     public String showRegistration(){
-        return "Registration";
+        return "registration";
     }
 
     @PostMapping

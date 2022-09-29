@@ -7,6 +7,7 @@ import com.timzowen.user.Authentication.web.dto.UserRegistrationDto;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 @Service
 public class UserServiceImpl implements UserService{
@@ -26,7 +27,7 @@ public class UserServiceImpl implements UserService{
                 registrationDto.getLastName(),
                 registrationDto.getEmail(),
                 registrationDto.getPassword(),
-                Arrays.asList(new Role("ROLE_USER")));
+                Collections.singletonList(new Role("ROLE_USER")));
         return userRepository.save(user);
     }
 }

@@ -1,5 +1,7 @@
 package com.timzowen.user.Authentication.model;
 
+import com.timzowen.user.Authentication.web.dto.UserRegistrationDto;
+
 import javax.persistence.*;
 import java.lang.reflect.Type;
 import java.util.Collection;
@@ -26,6 +28,7 @@ public class User {
                     name = "role_id", referencedColumnName = "id")
     )
     private Collection<Role> roles;
+
 
     public User(String firstName, String lastName, String email, String password, Collection<Role> roles){
         super();
