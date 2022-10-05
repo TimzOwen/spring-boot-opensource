@@ -52,9 +52,33 @@ class ProductRepositoryTest {
     }
 
     @Test
+    void deleteOneEntity(){
+        Long id = 2L;
+        productRepository.deleteById(id);
+    }
+
+    @Test
+    void deleteMethod(){
+        Long id = 4L;
+        Product product = productRepository.findById(id).get();
+        productRepository.delete(product);
+    }
+
+    @Test
+    void deleteAllMethod(){
+        productRepository.deleteAll();
+    }
+
+    @Test
     void getAnEntity(){
         Long id = 2L;
         Product product = productRepository.findById(id).get();
+    }
+
+    @Test
+    void countMethod(){
+        Long count = productRepository.count();
+        System.out.println(count);
     }
 
     @Test
