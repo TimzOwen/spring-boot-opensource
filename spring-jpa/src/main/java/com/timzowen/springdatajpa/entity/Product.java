@@ -33,7 +33,7 @@ public class Product {
     @SequenceGenerator(
             name = "product_gen",
             sequenceName = "product_seq_name",
-            allocationSize = 2
+            allocationSize = 1
     )
     private Long id;
     private String sku;
