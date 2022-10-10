@@ -18,4 +18,10 @@ public class SpringbootApplication {
 		return "Test Ok for War Deployment";
 	}
 
+
+	@GetMapping("/testing")
+	public String testing(){
+		return "Test Ok for War testing auto reaload";
+	}
+
 }
