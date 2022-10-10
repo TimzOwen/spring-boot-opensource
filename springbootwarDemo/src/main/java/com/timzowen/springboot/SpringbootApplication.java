@@ -15,7 +15,7 @@ public class SpringbootApplication {
 
 	@GetMapping("/test")
 	public String testCheck(){
-		return "Test Ok";
+		return "Test Ok for War Deployment";
 	}
 
 }
