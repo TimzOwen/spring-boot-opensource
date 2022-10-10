@@ -1,6 +1,8 @@
 package com.timzowen.helloworld;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -23,8 +25,20 @@ public class StudentController {
         students.add(new Student("Kimberly","Paris"));
         students.add(new Student("Junet","Mohammed"));
         students.add(new Student("Larry","aKinyi"));
-
         return students;
     }
 
+    @GetMapping("/student/{firstName}/{lastName}")
+    public Student pathVarStudent(@PathVariable("firstName") String firstName,
+                                  @PathVariable("lastName") String lastName){
+        return new Student(firstName,lastName);
+    }
+
+    // make sure to include ? symbol and & symbol
+    @GetMapping("/student/query")
+    public Student studentQueryParam(
+            @RequestParam(name = "firstName") String firstName,
+            @RequestParam(name = "lastName") String lastName){
+        return new Student(firstName, lastName);
+    }
 }
