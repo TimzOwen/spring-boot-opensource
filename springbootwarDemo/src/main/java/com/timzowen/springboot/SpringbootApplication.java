@@ -10,6 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringbootApplication {
 
 	public static void main(String[] args) {
+
+		LombokTest lombokTest = new LombokTest();
+		lombokTest.setName("Lombok");
+		lombokTest.setLocation("no more boiler plate");
+		lombokTest.setId(129);
+
+		System.out.println(lombokTest.getName());
+		System.out.println(lombokTest.getLocation());
+		System.out.println(lombokTest.getId());
+
 		SpringApplication.run(SpringbootApplication.class, args);
 	}
 
