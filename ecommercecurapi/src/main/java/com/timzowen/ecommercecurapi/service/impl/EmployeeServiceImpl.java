@@ -31,7 +31,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee getEmployee(long id) {
-
         // using lambda
         return employeeRepository.findById(id).orElseThrow( ()->
                 new ResourceNotFound("Employee","Id",id));
@@ -44,9 +43,19 @@ public class EmployeeServiceImpl implements EmployeeService {
 //        }else {
 //            throw  new ResourceNotFound("Employee","Id",id);
 //        }
-
-
     }
 
+    @Override
+    public Employee updateEmployee(Employee employee, long id) {
+        Employee existingEmployee = employeeRepository.findById(id).orElseThrow(() ->
+                new ResourceNotFound("Employee","Id",id));
+
+        existingEmployee.setFirstName(employee.getFirstName());
+        existingEmployee.setLastName(employee.getLastName());
+        existingEmployee.setEmail(employee.getEmail());
+        //save the object
+        employeeRepository.save(existingEmployee);
+        return existingEmployee;
+    }
 
 }
