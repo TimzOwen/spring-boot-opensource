@@ -11,7 +11,7 @@
 	<groupId>com.timzowen</groupId>
 	<artifactId>ecommercecurapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ecommercecurapi</name>
+	<name>commercialise</name>
 	<description>Ecommerce spring-boot-crud-api</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -57,7 +57,7 @@
 				<configuration>
 					<excludes>
 						<exclude>
-							<groupId>org.projectlombok</groupId>
+							<groupId>org.project-lombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
