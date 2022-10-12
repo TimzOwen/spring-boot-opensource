@@ -9,5 +9,4 @@ class EcommercecurapiApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

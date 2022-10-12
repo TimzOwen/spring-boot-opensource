@@ -7,7 +7,6 @@ import com.timzowen.ecommercecurapi.service.EmployeeService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -31,18 +30,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee getEmployee(long id) {
-        // using lambda
         return employeeRepository.findById(id).orElseThrow( ()->
                 new ResourceNotFound("Employee","Id",id));
-
-            // Or use if else
-
-//        Optional<Employee> employee = employeeRepository.findById(id);
-//        if (employee.isPresent()){
-//            return employee.get();
-//        }else {
-//            throw  new ResourceNotFound("Employee","Id",id);
-//        }
     }
 
     @Override
