@@ -12,7 +12,7 @@ public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "company_name")
+    @Column(name = "company_name" ,nullable = false)
     private String name;
     @Column(name = "company_location")
     private String location;
