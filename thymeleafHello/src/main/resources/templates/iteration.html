@@ -25,7 +25,7 @@
                 <td th:text="${employee.email}"></td>
             </tr>
             <tr th:each="employee : ${employees}"
-                th:style="${employeeStat.odd}? 'font-weight: bold'"
+                th:style="${employeeStat.odd}? 'font-weight: bold;'"
                 th:alt-title="${employeeStat.even}? 'even': 'odd'">
                 <td th:text="${employee.firstName}"></td>
                 <td th:text="${employee.firstName}"></td>
