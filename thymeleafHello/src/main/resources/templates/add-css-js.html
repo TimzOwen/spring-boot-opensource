@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Add Css and JS Thymeleaf</title>
-    <link th:href="@{/css/main.css}" rel="stylesheet">
-    <script type="text/javascript" th:src="@{/js/actions.js}"></script>
-</head>
-<body>
-    <h2>Heading</h2>
-    <p>This is a sample <strong>Message for thymeleaf</strong></p>
-    <button type="button" th:onclick="demo()" >show Alert</button>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Add Css and JS Thymeleaf</title>
+        <link rel="stylesheet" th:href="@{/css/main.css}">
+        <script th:src="@{/js/actions.js}" type="text/javascript"></script>
+    </head>
+    <body>
+        <h2>Heading</h2>
+        <p>This is a sample <strong>Message for thymeleaf</strong></p>
+        <button th:onclick="demo()" type="button">show Alert</button>
+    </body>
 </html>
