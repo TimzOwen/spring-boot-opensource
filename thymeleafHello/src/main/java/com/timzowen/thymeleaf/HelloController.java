@@ -12,4 +12,9 @@ public class HelloController {
         model.addAttribute("message","Hello world Thymeleaf");
         return "helloworld";
     }
+
+    @GetMapping("/style")
+    public String thymeleafDemo(){
+        return "add-css-js";
+    }
 }
