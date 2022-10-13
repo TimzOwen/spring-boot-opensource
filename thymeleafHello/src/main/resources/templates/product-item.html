@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Bootstrap CSS Demo</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>Products</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Employee First Name</th>
+                <th>Employee Last Name</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="product : ${products}">
+                <td th:text="${product.name}"></td>
+                <td th:text="${product.type}"></td>
+                <td th:text="${product.cost}"></td>
+            </tr>
+            <tr th:each="product : ${products}"
+                th:style="${productStat.odd}? 'font-weight: bold;'"
+                th:alt-title="${productStat.even}? 'even': 'odd'">
+                <td th:text="${product.name}"></td>
+                <td th:text="${product.type}"></td>
+                <td th:text="${product.cost}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
