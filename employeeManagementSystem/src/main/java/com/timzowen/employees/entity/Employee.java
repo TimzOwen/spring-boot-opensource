@@ -8,9 +8,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
 @ToString
-@RequiredArgsConstructor
 @Table(name = "employees")
 public class Employee {
 
@@ -19,5 +17,13 @@ public class Employee {
     private Long Id;
     private String firstName;
     private String lastName;
+    private String email;
 
+    public Employee(String firstName, String lastName, String email) {
+        super();
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.email=email;
+    }
+    public Employee(){}
 }
