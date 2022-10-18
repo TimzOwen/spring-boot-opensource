@@ -31,8 +31,8 @@
 
 <div class="container">
     <div class="row">
+        <br>
         <div class="col-lg-3">
-            <br>
             <br>
             <a th:href="@{/employee/new}" class="btn btn-primary btn-sm mb-3">Add Staff</a>
         </div>
@@ -51,9 +51,9 @@
             <td th:text="${employee.getFirstName()}"></td>
             <td th:text="${employee.getLastName()}"></td>
             <td th:text="${employee.getEmail()}"></td>
-            <td> <a th:href="@{/employee/edit/{id}(id=${employee.getId()})}"
+            <td> <a th:href="@{/employees/edit/{id}(id=${employee.getId()})}"
                class="btn btn-primary">Update</a>
-            <a th:href="@{/employee/{id}(id=${employee.getId()})}"
+            <a th:href="@{/employees/{id}(id=${employee.getId()})}"
                class="btn btn-danger">Delete</a>
             </td>
         </tr>
