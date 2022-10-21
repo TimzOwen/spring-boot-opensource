@@ -3,11 +3,7 @@ package com.timzowen.springsecurity.web;
 import com.timzowen.springsecurity.service.impl.UserServiceImpl;
 import com.timzowen.springsecurity.web.dto.UserRegistrationDto;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.*;
 @Controller
 @RequestMapping("/registration")
 public class UserRegistrationController {
@@ -22,7 +18,7 @@ public class UserRegistrationController {
     }
 
     @GetMapping
-    public String showRegistration(){
+    public String showRegistrationForm(){
         return "registration";
     }
     @PostMapping
