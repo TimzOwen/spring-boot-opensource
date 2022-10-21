@@ -16,6 +16,10 @@ public class UserRegistrationController {
     public UserRegistrationController(UserServiceImpl userService) {
         this.userService = userService;
     }
+    @ModelAttribute("user")
+    public UserRegistrationDto userRegistrationDto(){
+        return new UserRegistrationDto();
+    }
 
     @GetMapping
     public String showRegistration(){
