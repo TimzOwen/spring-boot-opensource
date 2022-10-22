@@ -6,6 +6,8 @@ import com.timzowen.springsecurity.model.User;
 import com.timzowen.springsecurity.repository.UserRepository;
 import com.timzowen.springsecurity.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
@@ -29,5 +31,10 @@ public class UserServiceImpl implements UserService {
                 registrationDto.getPassword(),
                 Collections.singletonList(new Role("ROLE_USER")));
         return userRepository.save(user);
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return null;
     }
 }
