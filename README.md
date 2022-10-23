@@ -1,3 +1,3 @@
-### spring_java
+### springboot tutorials & projects
 
-Just learning spring boot ! Nothing more
+
