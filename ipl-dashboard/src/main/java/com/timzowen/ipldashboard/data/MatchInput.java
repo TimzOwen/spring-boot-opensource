@@ -20,7 +20,7 @@ public class MatchInput {
     private String umpire1;
     private String umpire2;
 
-    public String getId() {
+    public long getId() {
         return id;
     }
 
