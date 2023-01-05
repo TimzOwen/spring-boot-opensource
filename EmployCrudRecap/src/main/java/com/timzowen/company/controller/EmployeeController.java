@@ -1,6 +1,5 @@
 package com.timzowen.company.controller;
 
-import com.timzowen.company.exceptions.ResourceNotFoundException;
 import com.timzowen.company.model.Employee;
 import com.timzowen.company.service.EmployeeService;
 import org.springframework.http.HttpStatus;
