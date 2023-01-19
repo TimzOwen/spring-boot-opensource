@@ -3,8 +3,6 @@ package demo;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import javax.print.Doc;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -12,6 +10,10 @@ public class Main {
 
         Doctor doctor = context.getBean(Doctor.class);
         doctor.assist();
+
+        Patient patient = context.getBean(Patient.class);
+        patient.status();
+
 
     }
 }
