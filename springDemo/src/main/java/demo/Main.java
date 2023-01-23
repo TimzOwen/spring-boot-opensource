@@ -8,11 +8,9 @@ public class Main {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-        Doctor doctor = context.getBean(Doctor.class);
-        doctor.assist();
+        Staff staff = context.getBean(Nurse.class);
+        staff.assist();
 
-        Patient patient = context.getBean(Patient.class);
-        patient.status();
 
 
     }

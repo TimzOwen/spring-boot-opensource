@@ -6,7 +6,7 @@
         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="doctor" class="demo.Doctor"/>
-
     <bean id="patient" class="demo.Patient"/>
+    <bean id="nurse" class="demo.Nurse"/>
 
 </beans>
