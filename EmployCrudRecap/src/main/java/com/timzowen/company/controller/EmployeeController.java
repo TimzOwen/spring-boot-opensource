@@ -29,6 +29,7 @@ public class EmployeeController {
     public ResponseEntity<Employee> getEmployee(@PathVariable("id") long id){
         return new ResponseEntity<>(employeeService.getEmployee(id),HttpStatus.OK);
     }
+    // Get mapping for users using list from databases;
     @GetMapping
     public List<Employee> getAllEmployees(){
         return employeeService.getAllEmployees();

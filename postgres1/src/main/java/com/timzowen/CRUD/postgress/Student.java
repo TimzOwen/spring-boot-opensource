@@ -11,7 +11,6 @@ import javax.persistence.*;
 @ToString
 @Table(name = "student")
 public class Student {
-
     @Id
     @SequenceGenerator(
             sequenceName = "student_sequence",
