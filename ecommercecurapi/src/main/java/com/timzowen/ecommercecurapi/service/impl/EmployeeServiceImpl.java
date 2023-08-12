@@ -22,6 +22,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee saveEmployee(Employee employee) {
         return employeeRepository.save(employee);
     }
+    // comments
+
 
     @Override
     public List<Employee> getAllEmployees() {
@@ -34,6 +36,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 new ResourceNotFound("Employee","Id",id));
     }
 
+    //  uploading users to the databases;
     @Override
     public Employee updateEmployee(Employee employee, long id) {
         Employee existingEmployee = employeeRepository.findById(id).orElseThrow(() ->
@@ -53,5 +56,8 @@ public class EmployeeServiceImpl implements EmployeeService {
                 new ResourceNotFound("Employee","id",id));
         employeeRepository.deleteById(id);
     }
+
+    // no more comments on the chat section
+
 
 }
