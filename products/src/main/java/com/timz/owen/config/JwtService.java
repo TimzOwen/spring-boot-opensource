@@ -66,10 +66,15 @@ public class JwtService {
 
     //step 9--> Check for token expiration
     public boolean isTokenExpired(String token){
-        return true;
+        return extractExpiration(token).before(new Date());
     }
 
-    // 4.0 Get the base 64 conversion for the secret key
+    // step --> 10 get expiration
+    private Date extractExpiration(String token) {
+        return extractClaim(token, Claims::getExpiration);
+    }
+
+     // 4.0 Get the base 64 conversion for the secret key
     private Key getSigningKey() {
         byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);
         return Keys.hmacShaKeyFor(keyBytes);
