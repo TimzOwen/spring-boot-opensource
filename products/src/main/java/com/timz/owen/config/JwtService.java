@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.security.Key;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
@@ -40,6 +41,11 @@ public class JwtService {
                 .getBody();
     }
 
+    //set 7 -->  generate token without extra claims
+    public String generateToken(UserDetails userDetails){
+        return generateToken(new HashMap<>(),userDetails);
+    }
+
     // 6.0 --> generating token
     public String generateToken(Map<String,Object> extraClaims, UserDetails userDetails){
         return Jwts
@@ -52,6 +58,16 @@ public class JwtService {
                 .compact();
     }
 
+    // step 8-> token validation
+    public boolean isTokenValid(String token, UserDetails userDetails){
+        final String userName = extractUserName(token);
+        return (userName.equals(userDetails.getUsername()) && !isTokenExpired(token));
+    }
+
+    //step 9--> Check for token expiration
+    public boolean isTokenExpired(String token){
+        return true;
+    }
 
     // 4.0 Get the base 64 conversion for the secret key
     private Key getSigningKey() {
