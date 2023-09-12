@@ -16,7 +16,7 @@ public class ReactiveRestApIsApplication {
 	}
 
 	@Bean
-	public CommandLineRunner commandLineRunner(StudentServiceImpl studentService){
+	public CommandLineRunner commandLineRunner(StudentService studentService){
 		return args -> {
 			for (int i=0; i<100; i++){
 				studentService.saveStudent(
