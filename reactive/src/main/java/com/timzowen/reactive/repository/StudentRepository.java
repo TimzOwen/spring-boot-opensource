@@ -1,6 +1,6 @@
 package com.timzowen.reactive.repository;
 
-import com.timzowen.reactive.student.Student;
+import com.timzowen.reactive.entity.Student;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import reactor.core.publisher.Flux;
 

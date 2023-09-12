@@ -1,4 +1,4 @@
-package com.timzowen.reactive.student;
+package com.timzowen.reactive.entity;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
@@ -9,7 +9,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "students")
+@Table("students")
 public class Student {
     @Id
     private Integer id;
