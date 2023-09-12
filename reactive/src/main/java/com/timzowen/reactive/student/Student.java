@@ -6,9 +6,9 @@ import org.springframework.data.relational.core.mapping.Table;
 
 @Getter
 @Setter
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Table(name = "students")
 public class Student {
     @Id
