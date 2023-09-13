@@ -9,8 +9,8 @@ class DemoApplicationTests {
 	Calculator underTest = new Calculator();
 	@Test
 	void addNumbers() {
-		int result = underTest.add(20,30);
-		assertThat(result).isEqualTo(30 + 20);
+		int result = underTest.add(22, 30);
+		assertThat(result).isEqualTo(52);
 	}
 
 	static class Calculator{
