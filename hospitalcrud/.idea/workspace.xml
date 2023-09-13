@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6109487-016d-4652-bb18-eb1dadad772f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../reactive/src/main/java/com/timzowen/reactive/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/src/main/java/com/timzowen/reactive/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive/src/main/java/com/timzowen/reactive/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive/src/main/java/com/timzowen/reactive/service/impl/StudentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../school-management" beforeDir="false" afterPath="$PROJECT_DIR$/../school-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springDemo/src/main/java/demo/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springDemo/src/main/java/demo/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springDemo/src/main/java/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springDemo/src/main/java/demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springDemo/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springDemo/src/main/resources/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springDemo/target/classes/demo/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springDemo/target/classes/demo/Doctor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springDemo/target/classes/demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springDemo/target/classes/demo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springDemo/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springDemo/target/classes/spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,8 @@
     "last_opened_file_path": "/Users/timzowen/IdeaProjects/spring/projects/hospitalcrud",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -79,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674700628463</updated>
       <workItem from="1674700629604" duration="1400000" />
+      <workItem from="1694612088783" duration="9000" />
     </task>
     <servers />
   </component>
