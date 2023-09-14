@@ -1,5 +1,6 @@
 package com.example.demo.student;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -11,6 +12,11 @@ class StudentRepositoryTest {
 
     @Autowired
     private  StudentRepository repositoryTest;
+
+    @AfterEach
+    void tearDown(){
+        repositoryTest.deleteAll();
+    }
 
     @Test
     void selectStudentEmailExists() {
@@ -24,6 +30,7 @@ class StudentRepositoryTest {
         assertThat(expectedEmail).isTrue();
     }
 
+    @Test
     void selectedStudentEmailDoesNotExist(){
         String email = "owen@gmail.com";
         boolean expectedEmail = repositoryTest.selectExistsEmail(email);
