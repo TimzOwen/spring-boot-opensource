@@ -23,4 +23,14 @@ class StudentRepositoryTest {
         boolean expectedEmail = repositoryTest.selectExistsEmail("timzowen@gmail.com");
         assertThat(expectedEmail).isTrue();
     }
+
+    void selectedStudentEmailDoesNotExist(){
+        Student student = new Student(
+                "Owen",
+                "owen@gmail.com",
+                Gender.FEMALE
+        );
+        repositoryTest.save(student);
+
+    }
 }
