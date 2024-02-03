@@ -3,6 +3,7 @@ package org.timzowen;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -64,14 +65,26 @@ class EmployeeTest {
 //        );
 //    }
 
+//
+//  // Using multiple params [ csv Source annotation]
+//    @DisplayName("Test method, num1, num2, expectedResults")
+//    @ParameterizedTest
+//    @CsvSource({
+//            "22, 1, 21",
+//             "33,3,30",
+//            "45,5,40"})
+//    void subtractionOfTwoNumbers(int num1, int num2, int expectedResults) {
+//        System.out.println("Running " + num1 + " - " + num2 + " = " + expectedResults);
+//        int actualResult = employee.calculateSalaryEmployee(num1, num2);
+//        assertEquals(expectedResults,actualResult, ()->
+//                num1 + " - " +  num2 + " did not return " + expectedResults);
+//    }
 
-  // Using multiple params [ csv Source annotation]
+
+  // Using multiple params [ from a csv file]
     @DisplayName("Test method, num1, num2, expectedResults")
     @ParameterizedTest
-    @CsvSource({"" +
-            "22, 1, 21",
-             "33,3,30",
-            "45,5,40"})
+    @CsvFileSource(resources = "/integerSubtraction.csv")
     void subtractionOfTwoNumbers(int num1, int num2, int expectedResults) {
         System.out.println("Running " + num1 + " - " + num2 + " = " + expectedResults);
         int actualResult = employee.calculateSalaryEmployee(num1, num2);
