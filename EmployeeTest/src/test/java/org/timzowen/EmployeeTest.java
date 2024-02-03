@@ -34,21 +34,22 @@ class EmployeeTest {
         System.out.println("@After each method getting executed........");
     }
 
-//    @Test
-//    @DisplayName("salary against time")
-//    void calculateSalaryExpectationBasedOnRatesAgainstTimeTest() {
-//        System.out.println("Running Salary test method");
-//        int expectedSalary = employee.calculateSalaryEmployee(30, 100);
-//        assertEquals(3000, expectedSalary);
-//    }
+    @Test
+    @DisplayName("salary against time")
+    void calculateSalaryExpectationBasedOnRatesAgainstTimeTest() {
+        System.out.println("Running Salary test method");
+        int expectedSalary = employee.calculateSalaryEmployee(30, 100);
+        assertEquals(3000, expectedSalary);
+    }
 
 
     // Testing input with multiple parameters.
+    //--> Method name can be same as the unit test name. Method source won't need naming.
     @DisplayName("Test method, num1, num2, expectedResults")
     @ParameterizedTest
-    @MethodSource("subtractionOfTwoNumbers")
-    void CalculateTSubtractionOfTwoNumbersTest(int num1, int num2, int expectedResults) {
-        System.out.println("Running multiple params test....");
+    @MethodSource
+    void subtractionOfTwoNumbers(int num1, int num2, int expectedResults) {
+        System.out.println("Running " + num1 + " - " + num2 + " = " + expectedResults);
         int actualResult = employee.calculateSalaryEmployee(num1, num2);
         assertEquals(expectedResults,actualResult, ()->
             num1 + " - " +  num2 + " did not return " + expectedResults);
