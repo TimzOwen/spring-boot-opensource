@@ -3,6 +3,7 @@ package org.timzowen;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
@@ -43,16 +44,39 @@ class EmployeeTest {
     }
 
 
-    // Testing input with multiple parameters.
-    //--> Method name can be same as the unit test name. Method source won't need naming.
+//    // Testing input with multiple parameters.
+//    //--> Method name can be same as the unit test name. Method source won't need naming.
+//    @DisplayName("Test method, num1, num2, expectedResults")
+//    @ParameterizedTest
+//    @MethodSource
+//    void subtractionOfTwoNumbers(int num1, int num2, int expectedResults) {
+//        System.out.println("Running " + num1 + " - " + num2 + " = " + expectedResults);
+//        int actualResult = employee.calculateSalaryEmployee(num1, num2);
+//        assertEquals(expectedResults,actualResult, ()->
+//            num1 + " - " +  num2 + " did not return " + expectedResults);
+//    }
+//
+//    private static Stream<Arguments> subtractionOfTwoNumbers(){
+//        return Stream.of(
+//                Arguments.of(33,2,31),
+//                Arguments.of(20,10,10),
+//                Arguments.of(15,10,5)
+//        );
+//    }
+
+
+  // Using multiple params [ csv Source annotation]
     @DisplayName("Test method, num1, num2, expectedResults")
     @ParameterizedTest
-    @MethodSource
+    @CsvSource({"" +
+            "22, 1, 21",
+             "33,3,30",
+            "45,5,40"})
     void subtractionOfTwoNumbers(int num1, int num2, int expectedResults) {
         System.out.println("Running " + num1 + " - " + num2 + " = " + expectedResults);
         int actualResult = employee.calculateSalaryEmployee(num1, num2);
         assertEquals(expectedResults,actualResult, ()->
-            num1 + " - " +  num2 + " did not return " + expectedResults);
+                num1 + " - " +  num2 + " did not return " + expectedResults);
     }
 
     private static Stream<Arguments> subtractionOfTwoNumbers(){
