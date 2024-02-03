@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/employees")
+@RequestMapping("api/v1/employees")
 public class EmployeeController {
 
-    private EmployeeService employeeService;
+    private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService) {
         super();
@@ -20,13 +20,13 @@ public class EmployeeController {
     }
 
     // Build Create Employee REST
-    @PostMapping
+    @PostMapping("/add")
     public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee){
         return new ResponseEntity<>(employeeService.saveEmployee(employee), HttpStatus.CREATED);
     }
 
     // build get all employee API
-    @GetMapping
+    @GetMapping("/all")
     public List<Employee> getAllEmployees(){
         return  employeeService.getAllEmployees();
     }
