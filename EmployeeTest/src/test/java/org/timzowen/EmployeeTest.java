@@ -2,10 +2,7 @@ package org.timzowen;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.CsvFileSource;
-import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.*;
 
 import java.util.stream.Stream;
 
@@ -79,6 +76,21 @@ class EmployeeTest {
 //        assertEquals(expectedResults,actualResult, ()->
 //                num1 + " - " +  num2 + " did not return " + expectedResults);
 //    }
+
+    // Value Source parameter
+    @ParameterizedTest
+    @ValueSource(strings = {"Timz","Owen","James"})
+    void valueSourceTest(String firstName){
+        System.out.println(firstName);
+        assertNotNull(firstName);
+    }
+
+    @ParameterizedTest
+    @ValueSource(doubles = {2.5,4.7,6.8,7.9,10.8})
+    void valueSourceIntsTest(double salary){
+        System.out.println(salary);
+//        assertNotNull(salary); // ints / doubles are never null so no need.
+    }
 
 
   // Using multiple params [ from a csv file]
