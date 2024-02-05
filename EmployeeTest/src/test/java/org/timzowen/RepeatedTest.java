@@ -15,7 +15,8 @@ public class RepeatedTest {
     }
 
     @DisplayName("Test Zero division")
-    @org.junit.jupiter.api.RepeatedTest(4)
+    @org.junit.jupiter.api.RepeatedTest(value = 4, name = " {displayName}. Repetition {currentRepetition} of " +
+                           " {totalRepetitions}")
     void TestingArithmeticOperation(RepetitionInfo repetitionInfo, TestInfo testInfo){
         System.out.println("Running " + testInfo.getTestMethod().get().getName());
         System.out.println("Repetition #" + repetitionInfo.getCurrentRepetition() +
