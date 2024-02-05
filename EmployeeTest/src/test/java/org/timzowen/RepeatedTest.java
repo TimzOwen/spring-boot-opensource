@@ -1,14 +1,11 @@
 package org.timzowen;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class RepeatedTest {
-
     Employee employee;
 
     @BeforeEach
@@ -19,7 +16,10 @@ public class RepeatedTest {
 
     @DisplayName("Test Zero division")
     @org.junit.jupiter.api.RepeatedTest(4)
-    void TestingArithmeticOperation(){
+    void TestingArithmeticOperation(RepetitionInfo repetitionInfo, TestInfo testInfo){
+        System.out.println("Running " + testInfo.getTestMethod().get().getName());
+        System.out.println("Repetition #" + repetitionInfo.getCurrentRepetition() +
+                " of " + repetitionInfo.getTotalRepetitions());
         int num1 = 4, num2 = 0;
         String expectedMessage = "/ by zero";
 
