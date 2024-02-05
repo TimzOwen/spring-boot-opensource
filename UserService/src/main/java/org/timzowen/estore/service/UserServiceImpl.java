@@ -11,7 +11,7 @@ public class UserServiceImpl implements UserService {
                            String password,
                            String repeatPassword) {
 
-        return new User();
+        return new User(firstName);
 
     }
 }
