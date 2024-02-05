@@ -40,10 +40,13 @@ public class UserServiceTest {
         String email = "owen@gmail.com";
         String password = "12345678";
         String repeatPassword = "12345678";
+        String expectedMessage = "user's first name is empty";
 
-        Assertions.assertThrows(IllegalArgumentException.class,()->{
+        IllegalArgumentException actualMessage = Assertions.assertThrows(IllegalArgumentException.class,()->{
             userService.createUser(firstName,lastName,email,password,repeatPassword);
-        },"Empty first Name shout throw an exception");
+        },"Empty first Name should throw an exception");
+
+        assertEquals(expectedMessage,actualMessage.getMessage());
     }
 
 }
