@@ -1,6 +1,7 @@
 package org.timzowen.estore.service;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.timzowen.estore.model.User;
@@ -8,17 +9,26 @@ import org.timzowen.estore.model.User;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class UserServiceTest {
+    UserService userService = new UserServiceImpl();
+    String firstName;
+    String lastName;
+    String email;
+    String password;
+    String repeatPassword;
+
+    @BeforeEach
+    void beforeEach(){
+        firstName = "Timz";
+        lastName = "Owen";
+        email = "owen@gmail.com";
+        password = "12345678";
+        repeatPassword = "12345678";
+    }
 
     @DisplayName("User Object creation")
     @Test
     void testCreateUser_whenUserDetailsProvided_returnUserObject(){
         //Arrange
-        UserService userService = new UserServiceImpl();
-        String firstName = "Timz";
-        String lastName = "Owen";
-        String email = "owen@gmail.com";
-        String password = "12345678";
-        String repeatPassword = "12345678";
 
         // Act
         User user = userService.createUser(firstName,lastName,email,password,repeatPassword);
@@ -34,19 +44,34 @@ public class UserServiceTest {
     @DisplayName("Empty firstName Throw exception")
     @Test
     void testCreateUser_WhenFirstNameIsEmpty_throwsIllegalArgsException(){
-        UserService userService = new UserServiceImpl();
+        //Arrange
         String firstName = "";
-        String lastName = "Owen";
-        String email = "owen@gmail.com";
-        String password = "12345678";
-        String repeatPassword = "12345678";
         String expectedMessage = "user's first name is empty";
 
+        // Act & Throw
         IllegalArgumentException actualMessage = Assertions.assertThrows(IllegalArgumentException.class,()->{
             userService.createUser(firstName,lastName,email,password,repeatPassword);
         },"Empty first Name should throw an exception");
 
-        assertEquals(expectedMessage,actualMessage.getMessage());
+        //Assert
+        assertEquals(expectedMessage,actualMessage.getMessage(),"Exception error message not correct.");
+    }
+
+    @DisplayName("Empty lastName throw exception")
+    @Test
+    void testCreateUser_WhenLastNameEmpty_ThrowIllegalArgsException(){
+        //arrange
+        lastName="";
+        String expectedMessage = "user last name should not be empty";
+
+        //Act & throw
+        IllegalArgumentException actualMessage = Assertions.assertThrows(IllegalArgumentException.class,()->{
+            userService.createUser(firstName,lastName,email,password,repeatPassword);
+        },"Empty last name should throw illegal exception");
+
+        // assert
+        assertEquals(expectedMessage,actualMessage.getMessage(),"Exception message not correct");
+
     }
 
 }
