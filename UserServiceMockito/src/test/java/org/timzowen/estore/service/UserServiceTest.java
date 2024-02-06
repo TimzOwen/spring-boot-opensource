@@ -53,7 +53,7 @@ public class UserServiceTest {
         assertNotNull(user.getId(),"User Id is missing");
 
         // Verify method calls
-        Mockito.verify(userRepository,times(1)).save(any(User.class));
+        Mockito.verify(userRepository).save(any(User.class));
     }
 
     @DisplayName("Empty firstName Throw exception")
