@@ -46,6 +46,10 @@ public class UserServiceImpl implements UserService {
         }
 
         return user;
-
     }
+
+    public void testNothing(){
+        System.out.println("nothing");
+    }
+
 }
