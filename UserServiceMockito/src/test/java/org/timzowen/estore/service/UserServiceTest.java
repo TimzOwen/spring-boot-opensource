@@ -96,6 +96,8 @@ public class UserServiceTest {
         doThrow(EmailNotificationException.class)
                 .when(emailVerificationService)
                 .scheduleEmailVerification(any(User.class));
+        // Do nothing
+        doNothing().when(emailVerificationService).scheduleEmailVerification(any(User.class));
 
         //Act & assert
         assertThrows(UserServiceException.class, () -> {
