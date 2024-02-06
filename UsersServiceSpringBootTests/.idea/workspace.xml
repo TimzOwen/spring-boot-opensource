@@ -5,55 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12eb4dab-7741-4ac0-864b-7132c13ce763" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/UsersServiceSpringBootApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/exceptions/UsersServiceException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/io/UserEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/io/UsersRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/security/AuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/security/AuthorizationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/security/SecurityConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/security/WebSecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/service/UsersService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/service/UsersServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/shared/SpringApplicationContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/shared/UserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/ui/controllers/UsersController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/ui/request/UserDetailsRequestModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/ui/request/UserLoginRequestModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timzowen/springboot/ui/response/UserRest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/timzowen/springboot/UsersServiceSpringBootApplicationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/UsersServiceSpringBootApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/exceptions/UsersServiceException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/io/UserEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/io/UsersRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/security/AuthenticationFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/security/AuthorizationFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/security/SecurityConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/security/WebSecurity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/service/UsersService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/service/UsersServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/service/UsersServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/shared/SpringApplicationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/shared/UserDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/ui/controllers/UsersController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/ui/controllers/UsersController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/ui/request/UserDetailsRequestModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/ui/request/UserLoginRequestModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/timzowen/springboot/ui/response/UserRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/timzowen/springboot/UsersServiceSpringBootApplicationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -69,6 +33,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2bzrDsAuL1MAECI6CtKrRhEOnFQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,6 +50,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/timzowen/IdeaProjects/spring/projects/UsersServiceSpringBootTests&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -92,6 +63,37 @@
   }
 }</component>
   <component name="RunManager" selected="JUnit.UsersServiceSpringBootApplicationTest">
+    <configuration name="UserControllerWebLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsersServiceSpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UserControllerWebLayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerWebLayerTest.testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsersServiceSpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UserControllerWebLayerTest" />
+      <option name="METHOD_NAME" value="testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UsersServiceSpringBootApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UsersServiceSpringBoot" />
       <extension name="coverage">
@@ -117,6 +119,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UsersServiceSpringBootApplicationTest" />
+        <item itemvalue="JUnit.UserControllerWebLayerTest" />
+        <item itemvalue="JUnit.UserControllerWebLayerTest.testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +134,7 @@
       <updated>1707228633212</updated>
       <workItem from="1707228634321" duration="150000" />
       <workItem from="1707228799024" duration="169000" />
+      <workItem from="1707228979879" duration="12326000" />
     </task>
     <servers />
   </component>
