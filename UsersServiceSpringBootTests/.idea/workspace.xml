@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="12eb4dab-7741-4ac0-864b-7132c13ce763" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UsersServiceSpringBootApplicationTest">
+  <component name="RunManager" selected="JUnit.UserControllerWebLayerTest.testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails">
     <configuration name="UserControllerWebLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UsersServiceSpringBoot" />
       <extension name="coverage">
@@ -74,6 +76,22 @@
       <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UserControllerWebLayerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerWebLayerTest.testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsersServiceSpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UserControllerWebLayerTest" />
+      <option name="METHOD_NAME" value="testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,9 +136,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UsersServiceSpringBootApplicationTest" />
-        <item itemvalue="JUnit.UserControllerWebLayerTest" />
+        <item itemvalue="JUnit.UserControllerWebLayerTest.testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" />
         <item itemvalue="JUnit.UserControllerWebLayerTest.testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails" />
+        <item itemvalue="JUnit.UserControllerWebLayerTest" />
+        <item itemvalue="JUnit.UsersServiceSpringBootApplicationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -135,6 +154,8 @@
       <workItem from="1707228634321" duration="150000" />
       <workItem from="1707228799024" duration="169000" />
       <workItem from="1707228979879" duration="12326000" />
+      <workItem from="1707254218200" duration="1403000" />
+      <workItem from="1707256377925" duration="335000" />
     </task>
     <servers />
   </component>
