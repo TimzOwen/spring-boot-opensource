@@ -13,6 +13,7 @@ import org.timzowen.estore.data.UserRepository;
 import org.timzowen.estore.model.User;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class UserServiceTest {
@@ -39,7 +40,7 @@ public class UserServiceTest {
     @Test
     void testCreateUser_whenUserDetailsProvided_returnUserObject(){
         //Arrange
-        Mockito.when(userRepository.save(Mockito.any(User.class))).thenReturn(true);
+        Mockito.when(userRepository.save(any(User.class))).thenReturn(true);
 
         // Act
         User user = userService.createUser(firstName,lastName,email,password,repeatPassword);
@@ -50,6 +51,9 @@ public class UserServiceTest {
         assertEquals(lastName,user.getLastName(),"lastName not matching user input");
         assertEquals(email,user.getEmail(),"User Email not matching user input");
         assertNotNull(user.getId(),"User Id is missing");
+
+        // Verify method calls
+        Mockito.verify(userRepository,times(1)).save(any(User.class));
     }
 
     @DisplayName("Empty firstName Throw exception")
