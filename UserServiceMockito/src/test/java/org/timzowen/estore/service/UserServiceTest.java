@@ -72,6 +72,23 @@ public class UserServiceTest {
         assertEquals(expectedMessage,actualMessage.getMessage(),"Exception error message not correct.");
     }
 
+    @Test
+    @DisplayName("save() causes Runtime, userServiceException thrown")
+    void testCreateUser_whenSaveMethodThrowsException_thenThrowsUserServiceException(){
+        String expectedMessage = "user's first name is empty";
+        //Arrange
+        when(userRepository.save(any(User.class))).thenThrow(RuntimeException.class);
+
+        //Act
+        assertThrows(UserServiceException.class,()->{
+            userService.createUser(firstName,lastName,email,password, repeatPassword);
+        },"Should have thrown userServiceException instead");
+
+        //Assert
+
+    }
+
+
     @DisplayName("Empty lastName throw exception")
     @Test
     void testCreateUser_WhenLastNameEmpty_ThrowIllegalArgsException(){
