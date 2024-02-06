@@ -84,8 +84,6 @@ public class UserServiceTest {
             userService.createUser(firstName,lastName,email,password, repeatPassword);
         },"Should have thrown userServiceException instead");
 
-        //Assert
-
     }
 
 

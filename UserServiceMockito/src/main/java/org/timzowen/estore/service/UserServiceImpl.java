@@ -9,9 +9,11 @@ import java.util.UUID;
 public class UserServiceImpl implements UserService {
 
     UserRepository userRepository;
+    EmailVerificationService emailVerificationService;
 
-    public UserServiceImpl(UserRepository userRepository){
+    public UserServiceImpl(UserRepository userRepository, EmailVerificationService emailVerificationService){
         this.userRepository = userRepository;
+        this.emailVerificationService=emailVerificationService;
     }
 
     @Override
@@ -36,6 +38,12 @@ public class UserServiceImpl implements UserService {
         }
 
         if (!isUserCreated) throw new UserServiceException("Could not create user");
+
+        try{
+            emailVerificationService.scheduleEmailVerification(user);
+        }catch (RuntimeException exception){
+            throw new UserServiceException(exception.getMessage());
+        }
 
         return user;
 
