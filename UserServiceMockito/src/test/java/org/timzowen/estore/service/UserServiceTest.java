@@ -97,7 +97,7 @@ public class UserServiceTest {
                 .when(emailVerificationService)
                 .scheduleEmailVerification(any(User.class));
         // Do nothing
-        doNothing().when(emailVerificationService).scheduleEmailVerification(any(User.class));
+        //  doNothing().when(emailVerificationService).scheduleEmailVerification(any(User.class));
 
         //Act & assert
         assertThrows(UserServiceException.class, () -> {
@@ -107,6 +107,21 @@ public class UserServiceTest {
         // Assert
         verify(emailVerificationService, times(1))
                 .scheduleEmailVerification(any(User.class));
+    }
+
+    @DisplayName("Schedule Email confirmation is executed.")
+    @Test
+    void testCreateUser_whenUserCreated_scheduleEmailConfirmation(){
+        // Arrange
+        when(userRepository.save(any(User.class))).thenReturn(true);
+
+        doCallRealMethod().when(emailVerificationService).scheduleEmailVerification(any(User.class));
+
+        //Act
+        userService.createUser(firstName,lastName,email,password,repeatPassword);
+
+        //assert
+        verify(emailVerificationService,times(1)).scheduleEmailVerification(any(User.class));
     }
 
 
