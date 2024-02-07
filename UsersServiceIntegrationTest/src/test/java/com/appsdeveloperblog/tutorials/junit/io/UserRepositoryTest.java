@@ -16,38 +16,46 @@ public class UserRepositoryTest {
     TestEntityManager testEntityManager;
 
     @Autowired
-    UsersRepository usersRepository;
+    private UsersRepository usersRepository;
 
-    UserEntity userEntity;
+    private final String userId1 = UUID.randomUUID().toString();
+    private final String userId2 = UUID.randomUUID().toString();
+    private final String email1 = "test@email1.com";
+    private final String email2 = "test@email2.com";
 
     @BeforeEach
     void setup(){
-        userEntity= new UserEntity();
-        userEntity.setUserId("12");
+        UserEntity userEntity= new UserEntity();
+        userEntity.setUserId(userId1);
         userEntity.setFirstName("Timz");
         userEntity.setLastName("Owen");
-        userEntity.setEmail("timz@gmail.com");
+        userEntity.setEmail(email1);
         userEntity.setEncryptedPassword("12345678");
+        testEntityManager.persistAndFlush(userEntity);
+
+        UserEntity userEntity2= new UserEntity();
+        userEntity2.setUserId(userId2);
+        userEntity2.setFirstName("Timz");
+        userEntity2.setLastName("Owen");
+        userEntity2.setEmail(email2);
+        userEntity2.setEncryptedPassword("12345678");
+        testEntityManager.persistAndFlush(userEntity2);
     }
 
     @Test
     void testFindByEmail_whenCorrectEmailProvided_returnUserEntity(){
         // Arrange & Act
-        UserEntity savedUser = testEntityManager.persistAndFlush(userEntity);
-
-        Assertions.assertEquals(savedUser.getEmail(),userEntity.getEmail(),"Provided Email did not match expected Email");
+        UserEntity storedUser = usersRepository.findByEmail(email1);
+        Assertions.assertEquals(email1,storedUser.getEmail(),"Provided Email did not match expected Email");
     }
 
     @Test
     void testFindById_whenRightUserEntityIdProvided_returnUserEntityObject(){
-        //Arrange
-        testEntityManager.persistAndFlush(userEntity);
 
-        //act
-        UserEntity savedUser = usersRepository.findByUserId(userEntity.getUserId());
+        UserEntity savedUser = usersRepository.findByUserId(userId2);
 
-        //assert
-        Assertions.assertEquals(savedUser.getUserId(),userEntity.getUserId(),"Should throw Exception no such user Id");
+        Assertions.assertNotNull(savedUser,"Entity object should not be null");
+        Assertions.assertEquals(userId2,savedUser.getUserId(),"Returned userId does not match expected Id");
 
     }
 }
