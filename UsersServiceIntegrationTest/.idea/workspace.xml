@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="12eb4dab-7741-4ac0-864b-7132c13ce763" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,44 +43,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/timzowen/IdeaProjects/spring/projects/UsersServiceSpringBootTests&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8c8a840dae32c2596938ea081e44ef6a&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/timzowen/IdeaProjects/spring/projects/UsersServiceIntegrationTest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "8c8a840dae32c2596938ea081e44ef6a",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.UserControllerWebLayerTest.testCreateUser_whenFirstNameIsOnlyOneCharacter_returns400StatusCode">
-    <configuration name="UserControllerWebLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UsersServiceSpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UserControllerWebLayerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="JUnit.UsersControllerIntegrationTest">
     <configuration name="UserControllerWebLayerTest.testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UsersServiceSpringBoot" />
       <extension name="coverage">
@@ -126,17 +114,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersServiceSpringBootApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UsersControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UsersServiceSpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.*" />
+          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit" />
-      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.UsersServiceSpringBootApplicationTest" />
+      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UsersControllerIntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersControllerIntegrationTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsersServiceSpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UsersControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="UsersServiceIntegrationTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="UsersServiceIntegrationTest" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UsersControllerIntegrationTest" />
+        <item itemvalue="JUnit.UsersControllerIntegrationTest.contextLoads" />
         <item itemvalue="JUnit.UserControllerWebLayerTest.testCreateUser_whenFirstNameIsOnlyOneCharacter_returns400StatusCode" />
         <item itemvalue="JUnit.UserControllerWebLayerTest.testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" />
         <item itemvalue="JUnit.UserControllerWebLayerTest.testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails" />
-        <item itemvalue="JUnit.UserControllerWebLayerTest" />
-        <item itemvalue="JUnit.UsersServiceSpringBootApplicationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +189,7 @@
       <workItem from="1707254218200" duration="1403000" />
       <workItem from="1707256377925" duration="661000" />
       <workItem from="1707290656795" duration="2984000" />
+      <workItem from="1707293737282" duration="1076000" />
     </task>
     <servers />
   </component>
