@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
+import java.util.List;
 import java.util.UUID;
 
 @DataJpaTest
@@ -56,6 +57,26 @@ public class UserRepositoryTest {
 
         Assertions.assertNotNull(savedUser,"Entity object should not be null");
         Assertions.assertEquals(userId2,savedUser.getUserId(),"Returned userId does not match expected Id");
+
+    }
+
+    @Test
+    void testFindUserWithEmailEnds_whenGivenEmailDomain_returnUserWithGivenDomain(){
+        UserEntity userEntity= new UserEntity();
+        userEntity.setUserId("11");
+        userEntity.setFirstName("Timz");
+        userEntity.setLastName("Owen");
+        userEntity.setEmail("timz@gmail.com");
+        userEntity.setEncryptedPassword("12345678");
+
+        testEntityManager.persistAndFlush(userEntity);
+
+        String emailDomainName = "@gmail.com";
+
+        List<UserEntity> users = usersRepository.findUserWithEmailEndingWith(emailDomainName);
+
+        Assertions.assertEquals(1,users.size(),"There should be only one user");
+        Assertions.assertTrue(users.get(0).getEmail().endsWith(emailDomainName));
 
     }
 }
