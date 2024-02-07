@@ -7,7 +7,6 @@
     <list default="true" id="12eb4dab-7741-4ac0-864b-7132c13ce763" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +188,7 @@
       <workItem from="1707254218200" duration="1403000" />
       <workItem from="1707256377925" duration="661000" />
       <workItem from="1707290656795" duration="2984000" />
-      <workItem from="1707293737282" duration="2667000" />
+      <workItem from="1707293737282" duration="3275000" />
     </task>
     <servers />
   </component>
