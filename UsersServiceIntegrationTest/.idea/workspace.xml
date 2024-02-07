@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="12eb4dab-7741-4ac0-864b-7132c13ce763" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -65,7 +65,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UsersControllerIntegrationTest">
+  <component name="RunManager" selected="JUnit.UsersControllerIntegrationTest.contextLoads">
     <configuration name="UserControllerWebLayerTest.testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UsersServiceSpringBoot" />
       <extension name="coverage">
@@ -167,8 +167,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UsersControllerIntegrationTest" />
         <item itemvalue="JUnit.UsersControllerIntegrationTest.contextLoads" />
+        <item itemvalue="JUnit.UsersControllerIntegrationTest" />
         <item itemvalue="JUnit.UserControllerWebLayerTest.testCreateUser_whenFirstNameIsOnlyOneCharacter_returns400StatusCode" />
         <item itemvalue="JUnit.UserControllerWebLayerTest.testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" />
         <item itemvalue="JUnit.UserControllerWebLayerTest.testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails" />
@@ -189,7 +189,7 @@
       <workItem from="1707254218200" duration="1403000" />
       <workItem from="1707256377925" duration="661000" />
       <workItem from="1707290656795" duration="2984000" />
-      <workItem from="1707293737282" duration="1076000" />
+      <workItem from="1707293737282" duration="2667000" />
     </task>
     <servers />
   </component>
