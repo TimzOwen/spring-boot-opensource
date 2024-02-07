@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="12eb4dab-7741-4ac0-864b-7132c13ce763" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/ui/controllers/UsersControllerIntegrationTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,23 +67,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UsersControllerIntegrationTest.contextLoads">
-    <configuration name="UserControllerWebLayerTest.testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UsersServiceSpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UserControllerWebLayerTest" />
-      <option name="METHOD_NAME" value="testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UsersControllerIntegrationTest">
     <configuration name="UserControllerWebLayerTest.testCreateUser_whenFirstNameIsOnlyOneCharacter_returns400StatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UsersServiceSpringBoot" />
       <extension name="coverage">
@@ -92,22 +79,6 @@
       <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UserControllerWebLayerTest" />
       <option name="METHOD_NAME" value="testCreateUser_whenFirstNameIsOnlyOneCharacter_returns400StatusCode" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerWebLayerTest.testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UsersServiceSpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UserControllerWebLayerTest" />
-      <option name="METHOD_NAME" value="testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,6 +115,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UsersControllerIntegrationTest.testCreateUser_whenValidDetailsProvided_returnsUserDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsersServiceSpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UsersControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="testCreateUser_whenValidDetailsProvided_returnsUserDetails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersControllerIntegrationTest.testGetUsers_whenMissingJWT_return403" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UsersServiceSpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UsersControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="testGetUsers_whenMissingJWT_return403" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="UsersServiceIntegrationTest" />
       <method v="2">
@@ -166,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UsersControllerIntegrationTest.contextLoads" />
         <item itemvalue="JUnit.UsersControllerIntegrationTest" />
+        <item itemvalue="JUnit.UsersControllerIntegrationTest.testGetUsers_whenMissingJWT_return403" />
+        <item itemvalue="JUnit.UsersControllerIntegrationTest.testCreateUser_whenValidDetailsProvided_returnsUserDetails" />
+        <item itemvalue="JUnit.UsersControllerIntegrationTest.contextLoads" />
         <item itemvalue="JUnit.UserControllerWebLayerTest.testCreateUser_whenFirstNameIsOnlyOneCharacter_returns400StatusCode" />
-        <item itemvalue="JUnit.UserControllerWebLayerTest.testCreateUser_WhenFirstNameIsEmpty_returns400StatusCode" />
-        <item itemvalue="JUnit.UserControllerWebLayerTest.testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +191,7 @@
       <workItem from="1707254218200" duration="1403000" />
       <workItem from="1707256377925" duration="661000" />
       <workItem from="1707290656795" duration="2984000" />
-      <workItem from="1707293737282" duration="6951000" />
+      <workItem from="1707293737282" duration="10914000" />
     </task>
     <servers />
   </component>
