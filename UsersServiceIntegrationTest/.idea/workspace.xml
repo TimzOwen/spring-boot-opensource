@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="12eb4dab-7741-4ac0-864b-7132c13ce763" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appsdeveloperblog/tutorials/junit/io/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appsdeveloperblog/tutorials/junit/io/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/io/UserEntityIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appsdeveloperblog/tutorials/junit/io/UserEntityIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/io/UserEntityIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/appsdeveloperblog/tutorials/junit/io/UserEntityIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appsdeveloperblog/tutorials/junit/io/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appsdeveloperblog/tutorials/junit/io/UsersRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserEntityIntegrationTest.testUserEntity_whenDuplicateUserIdExist_shouldThrowException">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.testFindById_whenRightUserEntityIdProvided_returnUserEntityObject">
     <configuration name="UserEntityIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UsersServiceSpringBoot" />
       <extension name="coverage">
@@ -117,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserEntityIntegrationTest.testUserEntity_whenValidUserDetailsProvided_shouldReturnUserDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.testFindByEmail_whenCorrectEmailProvided_returnUserEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UsersServiceSpringBoot" />
       <extension name="coverage">
         <pattern>
@@ -126,24 +124,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.io" />
-      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.io.UserEntityIntegrationTest" />
-      <option name="METHOD_NAME" value="testUserEntity_whenValidUserDetailsProvided_shouldReturnUserDetails" />
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.io.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testFindByEmail_whenCorrectEmailProvided_returnUserEntity" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.testFindById_whenRightUserEntityIdProvided_returnUserEntityObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UsersServiceSpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.*" />
+          <option name="PATTERN" value="com.appsdeveloperblog.tutorials.junit.io.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.ui.controllers.UsersControllerIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.appsdeveloperblog.tutorials.junit.io" />
+      <option name="MAIN_CLASS_NAME" value="com.appsdeveloperblog.tutorials.junit.io.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testFindById_whenRightUserEntityIdProvided_returnUserEntityObject" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepositoryTest.testFindById_whenRightUserEntityIdProvided_returnUserEntityObject" />
+        <item itemvalue="JUnit.UserRepositoryTest.testFindByEmail_whenCorrectEmailProvided_returnUserEntity" />
         <item itemvalue="JUnit.UserEntityIntegrationTest.testUserEntity_whenDuplicateUserIdExist_shouldThrowException" />
         <item itemvalue="JUnit.UserEntityIntegrationTest" />
         <item itemvalue="JUnit.UserEntityIntegrationTest.testUserEntity_whenFirstNameTooLong_shouldThrowException" />
-        <item itemvalue="JUnit.UserEntityIntegrationTest.testUserEntity_whenValidUserDetailsProvided_shouldReturnUserDetails" />
-        <item itemvalue="JUnit.UsersControllerIntegrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +193,7 @@
       <workItem from="1707290656795" duration="2984000" />
       <workItem from="1707293737282" duration="13942000" />
       <workItem from="1707330660339" duration="6388000" />
-      <workItem from="1707338272945" duration="308000" />
+      <workItem from="1707338272945" duration="2187000" />
     </task>
     <servers />
   </component>
