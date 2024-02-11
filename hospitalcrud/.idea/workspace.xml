@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6109487-016d-4652-bb18-eb1dadad772f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../CRUD-postgress/src/main/java/com/timzowen/CRUD/postgress/customer/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRUD-postgress/src/main/java/com/timzowen/CRUD/postgress/customer/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../school-management" beforeDir="false" afterPath="$PROJECT_DIR$/../school-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CRUD-postgress/src/main/java/com/timzowen/CRUD/postgress/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CRUD-postgress/src/main/java/com/timzowen/CRUD/postgress/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsersServiceIntegrationTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UsersServiceIntegrationTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsersServiceIntegrationTest/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UsersServiceIntegrationTest/src/test/java/com/appsdeveloperblog/tutorials/junit/ui/controllers/UserControllerWebLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +79,7 @@
       <workItem from="1674700629604" duration="1400000" />
       <workItem from="1694612088783" duration="9000" />
       <workItem from="1695576120184" duration="101000" />
+      <workItem from="1707677760621" duration="23000" />
     </task>
     <servers />
   </component>

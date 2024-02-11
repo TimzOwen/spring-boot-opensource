@@ -59,8 +59,6 @@ public class UserControllerWebLayerTest {
     @DisplayName("user can be created")
     void testUserCreate_whenValidUserDetailsProvided_returnsCreatedUserDetails() throws Exception {
         //Arrange
-
-
         UserDto userDto = new ModelMapper().map(userDetailsRequestModel, UserDto.class);
         userDto.setUserId(UUID.randomUUID().toString());
         when(usersService.createUser(any(UserDto.class))).thenReturn(userDto);
