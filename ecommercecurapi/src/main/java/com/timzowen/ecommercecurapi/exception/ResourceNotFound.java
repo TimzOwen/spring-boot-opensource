@@ -1,9 +1,12 @@
 package com.timzowen.ecommercecurapi.exception;
 
+import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
+@Getter
 public class ResourceNotFound extends RuntimeException {
 
     private static final long serialVersionUID = 1L;
@@ -18,15 +21,15 @@ public class ResourceNotFound extends RuntimeException {
         this.fieldValue = fieldValue;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getFieldName() {
-        return fieldName;
-    }
-
-    public Object getFieldValue() {
-        return fieldValue;
-    }
+//    public String getFirstName() {
+//        return firstName;
+//    }
+//
+//    public String getFieldName() {
+//        return fieldName;
+//    }
+//
+//    public Object getFieldValue() {
+//        return fieldValue;
+//    }
 }

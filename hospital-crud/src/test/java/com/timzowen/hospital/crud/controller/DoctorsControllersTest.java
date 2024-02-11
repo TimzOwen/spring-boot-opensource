@@ -9,6 +9,5 @@ class DoctorsControllersTest {
     @Test
     void testCreateDoctor_whenRightDetailsProvided_returnDoctor(){
         System.out.println("return data once student saved");
-    }
 
 }

@@ -18,13 +18,13 @@ public class DoctorsControllers {
     private DoctorsRepository doctorsRepository;
 
     // find all doctors
-    @GetMapping()
+    @GetMapping("/doctors")
     public List<Doctor> getAllDoctors(){
         return doctorsRepository.findAll();
     }
 
     //create doctor
-    @PostMapping
+    @PostMapping("/add-doctor")
     public Doctor createDoctor(@RequestBody Doctor doctor){
         return doctorsRepository.save(doctor);
     }
