@@ -7,8 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DoctorsControllersTest {
 
     @Test
-    void testCreateDoctor_whenValidInput_saveDoctorToDb(){
-        System.out.println("write test for this");
-    }
+    void testCreateDoctor_whenRightDetailsProvided_returnDoctor(){
+        System.out.println("return data once student saved");
 
 }
