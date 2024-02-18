@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("students/api/v1/")
 public class StudentController {
 
     @GetMapping("student")
@@ -33,14 +34,14 @@ public class StudentController {
     }
 
     // using Request Param
-    @GetMapping("student/query")
+    @GetMapping("query")
     public ResponseEntity<Student> getStudentRequestParam(@RequestParam int studentId){
         Student student = new Student(studentId,"Timz","Owen");
         return ResponseEntity.ok(student);
 
     }
     // using Request Param to handle multiple params
-    @GetMapping("student/query/params")
+    @GetMapping("query/params")
     public ResponseEntity<Student> getStudentRequestParamQuery(@RequestParam int studentId,
                                           @RequestParam String firstName,
                                           @RequestParam String lastName){
@@ -49,7 +50,7 @@ public class StudentController {
     }
 
     // POST
-    @PostMapping("students/create")
+    @PostMapping("create")
     public ResponseEntity<Student> createStudent(@RequestBody Student student){
         System.out.println(student.getId());
         System.out.println(student.getFirstName());
@@ -58,7 +59,7 @@ public class StudentController {
     }
 
     // update mapping
-    @PutMapping("student/{id}/update")
+    @PutMapping("{id}/update")
     public ResponseEntity<Student> updateStudent(@PathVariable("id") int studentId,
                                  @RequestBody Student student){
         System.out.println(student.getFirstName());
@@ -67,7 +68,7 @@ public class StudentController {
     }
 
     // delete mapping
-    @DeleteMapping("student/{id}/delete")
+    @DeleteMapping("{id}/delete")
     public ResponseEntity<String> deleteStudent(@PathVariable int id){
         return ResponseEntity.ok("student with Id: " + id + " deleted successfully");
     }
