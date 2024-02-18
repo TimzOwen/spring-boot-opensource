@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="867e9376-90ba-4d88-8f51-62a4318304a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../school-management" beforeDir="false" afterPath="$PROJECT_DIR$/../school-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2bxQCjBMEw0K7GKQJLXnwZHo8Lk" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -36,6 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_directory_selection&quot;: &quot;/Users/timzowen/IdeaProjects/spring/projects/UserService/src/test/java&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -157,6 +163,8 @@
       <updated>1707154127357</updated>
       <workItem from="1707154128632" duration="8757000" />
       <workItem from="1707198286648" duration="684000" />
+      <workItem from="1708199613113" duration="311000" />
+      <workItem from="1708256578967" duration="854000" />
     </task>
     <servers />
   </component>
