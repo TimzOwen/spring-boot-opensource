@@ -1,6 +1,7 @@
 package com.timzowen.restapi.controller;
 
 import com.timzowen.restapi.entity.Student;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -41,5 +42,30 @@ public class StudentController {
                                           @RequestParam String firstName,
                                           @RequestParam String lastName){
         return new Student(studentId,firstName,lastName);
+    }
+
+    // POST
+    @PostMapping("students/create")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Student createStudent(@RequestBody Student student){
+        System.out.println(student.getId());
+        System.out.println(student.getFirstName());
+        System.out.println(student.getLastName());
+        return student;
+    }
+
+    // update mapping
+    @PutMapping("student/{id}/update")
+    public Student updateStudent(@PathVariable int id,
+                                 @RequestBody Student student){
+        System.out.println(student.getFirstName());
+        System.out.println(student.getLastName());
+        return student;
+    }
+
+    // delete mapping
+    @DeleteMapping("student/{id}/delete")
+    public String deleteStudent(@PathVariable int id){
+        return "student with Id: " + id + " deleted successfully";
     }
 }

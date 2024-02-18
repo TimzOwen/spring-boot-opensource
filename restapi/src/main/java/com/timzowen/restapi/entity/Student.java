@@ -2,22 +2,22 @@ package com.timzowen.restapi.entity;
 
 public class Student {
 
-    public int Id;
+    public int id;
     private String firstName;
     private String lastName;
 
     public Student(int id, String firstName, String lastName) {
-        Id = id;
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        id = id;
     }
 
     public String getFirstName() {
