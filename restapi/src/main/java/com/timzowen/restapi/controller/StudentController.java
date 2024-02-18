@@ -2,6 +2,7 @@ package com.timzowen.restapi.controller;
 
 import com.timzowen.restapi.entity.Student;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -16,56 +17,58 @@ public class StudentController {
     }
 
     @GetMapping("students")
-    public List<Student> getStudents(){
+    public ResponseEntity<List<Student>> getStudents(){
         List<Student> students = new ArrayList<>();
         students.add(new Student(4,"Timz","Owen"));
         students.add(new Student(4,"Timz","Owen"));
         students.add(new Student(4,"Timz","Owen"));
-        return students;
+        return ResponseEntity.ok(students);
     }
 
     // using @PathVariable
     @GetMapping("student/{id}")
-    public Student getStudentPathVariable(@PathVariable("id") int studentId){
-        return new Student(studentId, "Timz","owen");
+    public ResponseEntity<Student> getStudentPathVariable(@PathVariable("id") int studentId){
+        Student student = new  Student(studentId, "Timz","owen");
+        return ResponseEntity.ok(student);
     }
 
     // using Request Param
     @GetMapping("student/query")
-    public Student getStudentRequestParam(@RequestParam int studentId){
-        return new Student(studentId,"Timz","Owen");
+    public ResponseEntity<Student> getStudentRequestParam(@RequestParam int studentId){
+        Student student = new Student(studentId,"Timz","Owen");
+        return ResponseEntity.ok(student);
 
     }
     // using Request Param to handle multiple params
     @GetMapping("student/query/params")
-    public Student getStudentRequestParamQuery(@RequestParam int studentId,
+    public ResponseEntity<Student> getStudentRequestParamQuery(@RequestParam int studentId,
                                           @RequestParam String firstName,
                                           @RequestParam String lastName){
-        return new Student(studentId,firstName,lastName);
+         Student student =  new Student(studentId,firstName,lastName);
+         return ResponseEntity.ok(student);
     }
 
     // POST
     @PostMapping("students/create")
-    @ResponseStatus(HttpStatus.CREATED)
-    public Student createStudent(@RequestBody Student student){
+    public ResponseEntity<Student> createStudent(@RequestBody Student student){
         System.out.println(student.getId());
         System.out.println(student.getFirstName());
         System.out.println(student.getLastName());
-        return student;
+        return new ResponseEntity<>(student,HttpStatus.CREATED);
     }
 
     // update mapping
     @PutMapping("student/{id}/update")
-    public Student updateStudent(@PathVariable int id,
+    public ResponseEntity<Student> updateStudent(@PathVariable("id") int studentId,
                                  @RequestBody Student student){
         System.out.println(student.getFirstName());
         System.out.println(student.getLastName());
-        return student;
+        return ResponseEntity.ok(student);
     }
 
     // delete mapping
     @DeleteMapping("student/{id}/delete")
-    public String deleteStudent(@PathVariable int id){
-        return "student with Id: " + id + " deleted successfully";
+    public ResponseEntity<String> deleteStudent(@PathVariable int id){
+        return ResponseEntity.ok("student with Id: " + id + " deleted successfully");
     }
 }
